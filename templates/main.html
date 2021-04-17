@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title> Ayaan's Downloader</title> 
+
+
+</head>
+
+<body>
+<div class="header">
+
+
+
+<div class="row">
+<div class="col-2">
+    <h1>
+    AyaaN's YouTube Downloader
+    </h1>
+    <p>
+        I have made it with minimal codes...
+    </p>  
+    <br>
+    
+
+
+
+<div class="col-12">
+<label for="firstname">Link here:</label>
+<form action="{{ url_for('down')}}" method="post">
+    <input type="text" id="address" name="link" placeholder="Paste the link ">
+    </div>
+<button class="btn" type="submit">Download &#8594;</button>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+ {% block body %} {% endblock %}
+
+</body>
+</html>
